@@ -1,0 +1,312 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    font-family: 'Chivo';
+    width: 100%;
+    /* margin: auto; */
+    position: relative;
+    min-height: 100vh;
+    background-color: #121725;
+}
+
+.mobile {
+    mix-blend-mode: screen;
+    color: #121725;
+    opacity: 0.4;
+}
+
+.tablet,
+.desktop {
+    display: none;
+}
+
+.toptext {
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    min-height: ;
+}
+
+.toplogo {
+    margin-top: 58px;
+}
+
+.text {
+    margin-top: 57px;
+    mix-blend-mode: screen;
+    background-color: rgba(255, 255, 255, 0);
+    
+}
+
+.heading {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    /* or 146% */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.heading::first-line {
+    color: #54E6AF;
+}
+
+
+.desc {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    color: #C2CBE5;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 33px;
+}
+
+.icon {
+    width: 55.94px;
+    height: 16.95px;
+}
+
+.replace {
+    display: flex;
+    flex-direction: column;
+}
+
+.register {
+    margin-top: 48px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+#email {
+    background: #2C344B;
+    border-radius: 28px;
+    height: 46px;
+    width: 300px;
+    border: none;
+    padding-left: 32px;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.request {
+    background: #54E6AF;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+    border-radius: 28px;
+    height: 46px;
+    width: 326px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+    color: #121725;
+    border: none;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.request:hover {
+    background: #B3FFE2;
+}
+.error{
+    font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #FB3E3E;
+text-align: end;
+padding-right: 8em;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+.dots {
+    display: none;
+}
+
+.green {
+    display: none;
+}
+.check{
+    background-color: rgba(3, 13, 39, 0.9);
+    color: aliceblue;
+    text-align: center;
+    width:75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top:70%;
+}
+.hiddendiv{
+    display: none;
+}
+.reqhead{
+    font-size: 3em;
+}
+.reqdesc{
+    font-size: 2em;
+}
+
+@media screen and (min-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .toptext {
+        text-align: inherit;
+        mix-blend-mode: normal;
+    }
+
+    .toplogo {
+        margin-left: 40px;
+    }
+
+    .text {
+        margin-top: 152px;
+        height: 509px;
+        width: 635px;
+        margin-left: 40px;
+        mix-blend-mode: normal;
+        background-color: #121725;
+        min-height: 68vh;
+    }
+
+    .mobile,
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: flex;
+        text-align: right;
+    }
+
+    .image {
+        display: flex;
+        justify-content: end;
+        z-index: 2;
+    }
+
+    .toplogo {
+        z-index: 1;
+    }
+
+
+    .heading {
+        font-size: 48px;
+        padding-top: 93px;
+    }
+
+    .desc {
+        font-size: 18px;
+        width: 445px;
+        height: 84px;
+    }
+
+    .replace {
+        flex-direction: column-reverse;
+    }
+
+    .icons {
+        margin-top: 65px;
+    }
+
+    .icon {
+        width: 95.9px;
+        height: 28.91px;
+    }
+
+    .register {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        position: relative;
+    }
+
+    #email {
+        height: 56px;
+        width: 427px;
+        border-radius: 28px;
+    }
+
+    .request {
+        height: 46px;
+        width: 162px;
+        border-radius: 28px;
+        left: 380px;
+        top: -10px;
+        position: absolute;
+    }
+
+    .dots {
+        display: flex;
+        margin-top: 153px;
+    }
+
+    .green {
+        display: flex;
+        width: 100%;
+    }
+
+    .dots {
+        top: 686px;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    main {
+        height: 829px;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+        margin-top: 70px;
+    }
+
+    .heading {
+        margin-top: 88px;
+    }
+
+    .text {
+        margin-top: 1em;
+    }
+
+    .green {
+        position: absolute;
+        text-align: end;
+        display: flex;
+        justify-content: end;
+    }
+
+    .dots {
+        position: absolute;
+        top: -206px;
+    }
+}
